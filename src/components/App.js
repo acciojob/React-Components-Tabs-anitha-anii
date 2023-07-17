@@ -32,11 +32,12 @@ function App(){
         Features
       </div>
       <div className="viewport">
-        Pages Go Here
+        {activeTab === 'Home' && <p>Home Content Goes Here</p>}
+        {activeTab === 'About' && <p>About Content Goes Here</p>}
+        {activeTab === 'Features' && <p>Features Content Goes Here</p>}
       </div>
     </div>
   );
 };
-
 
 export default App;
