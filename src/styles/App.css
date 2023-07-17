@@ -1,12 +1,23 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
-
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
+/* src/components/Tabs.css */
+.tabs {
+    display: flex;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .viewport {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
