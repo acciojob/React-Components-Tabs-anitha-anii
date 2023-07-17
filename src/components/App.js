@@ -32,9 +32,9 @@ function App(){
         Features
       </div>
       <div className="viewport">
-        {activeTab === 'Home' && <p>Home Content Goes Here</p>}
-        {activeTab === 'About' && <p>About Content Goes Here</p>}
-        {activeTab === 'Features' && <p>Features Content Goes Here</p>}
+        {activeTab === 'Home' && <p>Pages Go Here</p>}
+        {activeTab === 'About' && <p>Pages Go Here</p>}
+        {activeTab === 'Features' && <p>Pages Go Here</p>}
       </div>
     </div>
   );
