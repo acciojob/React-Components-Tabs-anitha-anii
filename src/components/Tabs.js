@@ -11,7 +11,7 @@ const Tab = ({ name, activeTab, setActiveTab }) => {
   return (
     <div
       className={`tab ${isActive ? "active" : ""}`}
-      id={`${name}-tab`}
+      id={`${name}-Tab`}
       onClick={handleClick}
     >
       {name}
