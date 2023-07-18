@@ -12,6 +12,7 @@ const Tab = ({ name, activeTab, setActiveTab }) => {
     <div
       className={`tab ${isActive ? "active" : ""}`}
       id={`${name}-Tab`}
+      data-testid={`${name}-Tab`}
       onClick={handleClick}
     >
       {name}
