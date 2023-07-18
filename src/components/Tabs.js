@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import '../styles/App.css';
-
+import "../styles/App.css";
 
 const Tab = ({ name, activeTab, setActiveTab }) => {
   const isActive = activeTab === name;
+  const tabId = `${name}-Tab`; // Create a unique ID for each tab using the tab name
 
   const handleClick = () => {
     setActiveTab(name);
@@ -12,9 +12,9 @@ const Tab = ({ name, activeTab, setActiveTab }) => {
   return (
     <div
       className={`tab ${isActive ? "active" : ""}`}
-      id={`${name}-Tab`}
+      id={tabId} // Use the generated ID for the tab element
       onClick={handleClick}
-      data-testid={`tab-${name}`} 
+      data-testid={`tab-${name}`}
     >
       {name}
     </div>
