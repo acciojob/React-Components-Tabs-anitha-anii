@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../styles/App.css';
 
+
 const Tab = ({ name, activeTab, setActiveTab }) => {
   const isActive = activeTab === name;
 
@@ -12,8 +13,8 @@ const Tab = ({ name, activeTab, setActiveTab }) => {
     <div
       className={`tab ${isActive ? "active" : ""}`}
       id={`${name}-Tab`}
-      data-testid={`${name}-Tab`}
       onClick={handleClick}
+      data-testid={`tab-${name}`} 
     >
       {name}
     </div>
