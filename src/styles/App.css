@@ -1,23 +1,27 @@
-/* src/components/Tabs.css */
 .tabs {
-    display: flex;
-  }
-  
-  .tab {
-    padding: 10px 20px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-  }
-  
-  .tab.active {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .viewport {
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    width: 100%;
-  }
-  
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.tab {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-right: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab:last-child {
+  border-right: none;
+}
+
+.tab.active {
+  background-color: #2a62ca;
+}
+
+.viewport {
+  padding: 20px;
+  flex: 1;
+}
